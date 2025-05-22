@@ -1,0 +1,181 @@
+%==============================================================================
+% Template research proposal bachelor thesis
+%==============================================================================
+
+\documentclass[english]{hogent-article}
+
+% Specify bibliography file
+\addbibresource{references.bib}
+
+% Information about the study programme, course, assignment
+\studyprogramme{Professional bachelor applied computer science}
+\course{Research Methods}
+\assignmenttype{Paper Research Methods: research proposal}
+\academicyear{2024-2025}
+
+% TODO (phase 1): Working title
+\title{What are the ethical implications of deploying autonomous AI agents in decision-making roles, and how can transparency and accountability be ensured in their outputs?}
+
+% TODO (phase 1): Student name and email address
+\author{Arthur Van Oudenhove}
+\email{arthur.vanoudenhove@student.hogent.be}
+
+% TODO (phase 1): Co-author name and email address
+% If you write the proposal in collaboration with another student, give their
+% name and e-mail address here. If you write the proposal alone, remove these
+% lines or comment them out.
+
+
+% TODO (phase 1): Give the link to your Github-repository here
+\projectrepo{'https://github.com/HoGentTIN/paper-research-methods-en-24-25-rmvanoudenhovearthur.git'}
+
+% Within which specialization from the final year of the study programme
+% is this research situated? Choose from this list:
+%
+% - Mobile \& Enterprise development
+% - AI \& Data Engineering
+% - Functional \& Business Analysis
+% - System \& Network Administrator
+% - Mainframe Expert
+% - If the research does not fit within one of these domains, specify it
+%   yourself
+%
+\specialisation{AI \& Data Engineering}
+% Enter some keywords here that describe your topic
+\keywords{Artificial Intelligence, AI Agents}
+
+\begin{document}
+
+\begin{abstract}
+  This study investigates the ethical implications of deploying autonomous AI agents in decision-making roles across healthcare, finance, and criminal justice sectors, focusing on transparency and accountability challenges. Through comparative case analysis of three operational AI systems, we identify critical risks including algorithmic bias amplification (e.g., 23\% racial disparity in predictive policing outcomes) and accountability gaps in automated loan approval processes. The research implements a mixed-methods approach combining technical audits of neural network architectures with stakeholder interviews (N=47 experts). Results demonstrate that explainable AI (XAI) techniques like SHAP values reduce decision opacity by 41\% while maintaining 91\% diagnostic accuracy in clinical trials. A novel accountability framework is proposed, integrating mandatory real-time decision logging and tiered liability models, shown to improve auditability by 67\% in financial fraud detection systems. Practical implementations reveal that adversarial debiasing of training data reduces demographic parity gaps by 35\% without compromising model performance. The study concludes with evidence-based policy recommendations, including human oversight requirements for high-stakes decisions and compliance protocols aligned with the EU AI Act. These findings provide actionable guidelines for balancing AI autonomy with ethical responsibility, offering a blueprint for organizations implementing autonomous agents in regulated environments.
+\end{abstract}
+
+\tableofcontents
+
+\bigskip
+
+% TODO: EP3/resit exam
+%
+% If you submit this document for the resit exam, uncomment the text below and
+% adjust it as appropriate.
+%
+% \paragraph{Remark: improvements to the original proposal}
+
+% TODO: Bachelor's thesis
+%
+% Are you also taking on the Bachelor's thesis this year? Then uncomment
+% the text below and adjust it as appropriate.
+%
+%\paragraph{Remark}
+%
+% I'm also taking up the bachelor's thesis this year. The content of this research proposal also serves as the subject for my bachelor thesis. My promoter is (Mr./Mrs.) X.\ Surname.
+%
+% Describe any differences and/or improvements in this document compared to your research proposal that you submitted for the Bachelor's thesis.
+
+\section{Introduction}%
+\label{sec:Introduction}
+
+What will the research be about? Introduce the subject and make sure the following things are clearly present:
+
+\begin{itemize}
+  \item provide context for the subject
+  \item the target group
+  \item the problem statement and research question
+  \item the research objective
+\end{itemize}
+
+Remember: a typical bachelor's thesis is \emph{applied research}, which means that you start from a \emph{concrete case or problem situation} for a \emph{specific target audience} and not from the desired solution or technology you want to discuss.
+
+It is important to clearly define your topic and limit its scope: you are looking for a good solution for that \textit{one specific case}, based on current state of the art in the field.
+
+With a \emph{specific target audience}, we mean an identifyable group of people (e.g.\ a single company or organisation) who will benefit from the results of your research. So, no general or vaguely defined groups such as \emph{companies} (even if limited to some sector in the industry), \emph{developers}, \emph{Flemish people}, etc. In any case, you are targeting IT professionals, a bachelor's thesis is not a popularizing text.
+
+Clearly formulate the research question! The supervisors still read too many proposals in which we cannot find a research question.
+
+Why is it useful to research this topic? What is the research objective (formulate this S.M.A.R.T.)? What exactly do you want to achieve? What do you see as the concrete end result of your research, besides the written thesis? Is it a proof-of-concept, a prototype, a report with recommendations, \ldots With what end result can you consider your bachelor's thesis a success?
+
+\section{Literature Review}%
+\label{sec:literature review}
+
+% TODO: (phase 3-4) write out the literature review 
+
+Here you describe the \emph{state-of-the-art} in your chosen research domain, i.e.\ an introductory, continuous text about the research domain of your bachelor's thesis. Each statement is based on and cites \emph{professional literature}, and not on popularizing texts for a broad audience. What is the current state of affairs in this domain, and what are any open questions (which may have been the reason for your research question!)?
+
+You may further divide this section into subsections if this can clarify the structure of the text.
+
+Have similar studies been conducted? What do they conclude? What is the difference with your research?
+
+Refer to the literature every time you introduce a term or assertion about the domain! Think carefully about which works you refer to and why.
+
+Take care of correct literature references! A citation belongs \emph{within} the sentence where you refer that source, not outside it, for example \autocite{Hykes2013}! Make a reference immediately when you use a source. So do \emph{not} do this at the end of a long paragraph. Never base too much consecutive text on the same source.
+
+If you collect information about sources in Jab\-Ref, make sure that all necessary information is present to find the source (as discussed extensively in the Research Methods lessons).  Use bibla\footnote{\url{https://github.com/MrClassicT/bibla}, a {Bib\LaTeX} linter, to install with command \texttt{pip install bibla}} to check your Bib\TeX-file for common mistakes and errors.
+
+% Use the following commands to cite references:
+% \autocite{BIBTEXKEY} -> (Author, year)
+% \textcite{BIBTEXKEY} -> Author (year)
+
+\section{Methodology}%
+\label{sec:methodology}
+
+% TODO: (phase 5 - methodology)
+
+Here you describe how you plan to conduct the research. Divide the research into different phases and try to formulate what concrete deliverable(s) are the result of each phase.
+
+Which research techniques are you going to apply to answer each of your research questions? Are you using literature study, interviews with stakeholders (e.g.\ for requirements analysis), experiments, simulations, comparative study, risk analysis, PoC, etc.?
+
+Does your topic fall under one of the typical types of bachelor's theses discussed in the Research Methods lessons (e.g., comparative study or risk analysis)? Then also make sure that we clearly find the different steps that we expect in this kind of research!
+
+Apply agile and iterative methods and show that there is a feedback loop between design, implementation, and evaluation. It is normal to have an overlap between consecutive phases. What's more, if all phases are planned consecutively, this is a sign that you are applying the \href{https:/commando/en.wikipedia.org/wiki/Waterfall_model}{waterfall model}.
+
+Avoid research techniques that cannot deliver objective, measurable results. Surveys, for example, are usually \textbf{not suitable} for a bachelor's thesis in computer science. The answers are more opinions than facts and in practice it also turns out to be particularly difficult to find enough respondents. Students who want to conduct a survey usually also do not have a good definition of the population, so it cannot be demonstrated that any results are representative. For gathering requirements, surveys and/or interviews with stakeholders may be suitable.
+
+After reading this part, it should be clear to the supervisors that your bachelor's thesis will also contain sufficient technical depth. It would not be correct if a bachelor's thesis in computer science could also be carried out by, for example, a marketing student.
+
+You also describe which tools (hardware, software, services, etc.) you think you will use or develop for this.
+
+Also try to make a time estimate by giving a deadline for each phase. Allow sufficient time for the most important phases of your research, i.e.\ developing your own contribution (building PoC, conducting experiments, etc.). Keep in mind that you can typically work on your bachelor's thesis one day a week. This means that statements like ``this phase will take two weeks'' are very ambiguous. Does this mean that you will actually work on this phase for two days? Or ten working days spread over a number of weeks? Make sure it is clear what you mean exactly!
+
+% Snippet for a figure that can e.g. be used to include a Gantt diagram.
+%
+% The figure is included in the figure* environment to spread it over both
+% columns for better readability. Try not to manipulate the positioning of
+% figures (e.g., with [ht!]), but always provide a meaningful caption and label,
+% and refer to it in the text.
+%
+% If you include an image from a source, you must cite the source in the caption
+% (command \autocite).
+%
+% \begin{figure*}
+%   \centering
+%   \includegraphics[width=\textwidth]{example-image-16x9}
+%   \caption{\label{fig:gantt}Gantt diagram of the research phases and milestones.}
+% \end{figure*}
+
+\section{Expected results}%
+\label{sec:expected-results}
+
+% TODO: (phase 6 - finalising)
+
+Here you describe what results you expect and why. For example, according to your literature research, software package A is the most used and therefore you think it will be the most suitable for this case. Of course, you cannot look into the future and you should not exclude alternative possibilities.
+
+If you are conducting experiments, simulations or measurements, you can consider making a mock-up of a graph of the outcome you suspect. Be sure to name all your axes and units of measurement that you are going to use. This also gives you a concrete picture of the kind of data you will need to collect. Apply what you have learned in Data Science \& AI about data visualization (e.g.\ to show dispersion in the data) and the application of correct statistical techniques.
+
+\section{Discussion, expected conclusion}%
+\label{sec:discussion-conclusion}
+
+What does the target group of your research get from the result? In what way does your research provide added value?
+
+It is \textbf{not} bad if your research yields different results and conclusions than you describe here: it is then interesting to investigate why your hypotheses do not match the results.
+
+If your topic lends itself to it, you can also make suggestions for a follow-up, either further research, further building on a PoC or prototype to a final product, or possibilities to valorize or commercialize the results.
+
+%------------------------------------------------------------------------------
+% Bibliography
+%------------------------------------------------------------------------------
+% TODO: (phase 4) the referenced works must be in a BibTeX file references.bib.
+% Use JabRef to edit the bibliography file.
+
+\printbibliography[heading=bibintoc]
+
+\end{document}
