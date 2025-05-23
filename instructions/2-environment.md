@@ -57,8 +57,8 @@ If you chose a final topic in the previous phase, you can write the introduction
 
 ## Checklist
 
-- [ ] The necessary software is installed.
-- [ ] The basic Git settings are adapted where required. On committing, it is obvious who the author is. 
-- [ ] TeXstudio or VS Code are configured for use.
-- [ ] The template compiles without errors, in the generated PDF the (example) bibliography is present.
-- [ ] You've written out the introduction of your research subject
+- [x] The necessary software is installed.
+- [x] The basic Git settings are adapted where required. On committing, it is obvious who the author is. 
+- [x] TeXstudio or VS Code are configured for use.
+- [x] The template compiles without errors, in the generated PDF the (example) bibliography is present.
+- [x] You've written out the introduction of your research subject
